@@ -1,0 +1,94 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Commissioner', sans-serif;
+	height: 100%;
+	width: 100%;
+}
+.continar {
+	height: 100vh;
+	width: 100vw;
+}
+.hedar {
+	display: flex;
+	justify-content: space-around;
+	background-image: url(./images/image-hero-desktop.jpg);
+	height: 60vh;
+	width: 100vw;
+	color: white;
+}
+.logo {
+	width: auto;
+	height: 10vh;
+	padding-top: 5vh;
+}
+.nav {
+	width: 40vw;
+	height: 10vh;
+	padding-top: 5vh;
+}
+.nav ul {
+	display: flex;
+	justify-content: space-around;
+}
+.nav ul li {
+	list-style: none;
+	cursor: pointer;
+}
+.nav ul li:hover {
+	color: hsl(176, 72%, 28%);
+}
+.burg {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 2vw;
+	height: 10vh;
+	padding-top: 1vh;
+	display: none;
+}
+.burger {
+	display: flex;
+	flex-direction: column;
+	width: 20px;
+	height: 2.5px;
+	margin-bottom: 2px;
+	background-color: hsl(0, 3%, 94%);
+	cursor: pointer;
+}
+@media (max-width: 600px) {
+	.nav {
+		position: absolute;
+		top: 15vh;
+		width: 50vw;
+		height: 40vh;
+		background-color: rgb(255, 255, 255);
+		border-radius: 10px;
+		color: black;
+		margin-left: 60px;
+		display: none;
+	}
+	.nav ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 50vw;
+		height: 30vh;
+		padding-left: 20px;
+		font-weight: 700;
+	}
+	.nav ul li {
+		padding-bottom: 20px;
+		border-bottom: 1px solid hsl(0, 0%, 48%);
+	}
+	.burg {
+		display: inline-flex;
+	}
+	.sowNav {
+		display: inline-flex;
+	}
+}
