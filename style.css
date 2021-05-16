@@ -7,6 +7,7 @@ body {
 	font-family: 'Commissioner', sans-serif;
 	height: 100%;
 	width: 100%;
+	background-color: rgb(238, 238, 238);
 }
 .continar {
 	height: 100vh;
@@ -74,6 +75,70 @@ body {
 	background-color: hsl(0, 3%, 94%);
 	cursor: pointer;
 }
+.contant {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	left: 25%;
+	top: 30%;
+}
+.contant img {
+	margin-top: -50px;
+}
+.hed {
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 5px;
+}
+.hed p {
+	margin-top: -3%;
+}
+.btn-cont {
+	width: 100%;
+	height: 20%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.btn {
+	margin-left: -15%;
+	width: 25%;
+	height: 100%;
+	border-radius: 50px;
+	border: none;
+	color: white;
+	background-color: hsl(176, 50%, 47%);
+	cursor: pointer;
+}
+.btn-par {
+	display: flex;
+	margin-right: -15%;
+	align-items: center;
+	justify-content: space-between;
+	width: 25%;
+	height: 100%;
+	border-radius: 50px;
+	background-color: hsl(0, 3%, 94%);
+	position: relative;
+	padding-left: 20px;
+	font-weight: 400;
+}
+.btn-btn {
+	position: absolute;
+	display: flex;
+	right: 5%;
+	top: 27.5%;
+	cursor: pointer;
+	width: 45px;
+}
 @media (max-width: 600px) {
 	.continar {
 		height: 100vh;
@@ -127,5 +192,56 @@ body {
 	}
 	.sowNav {
 		display: inline-flex;
+	}
+	.contant {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 90%;
+		height: 100%;
+		position: absolute;
+		left: 5%;
+		top: 25%;
+	}
+	.hed {
+		width: 80%;
+	}
+	.contant img {
+		margin-top: -35px;
+	}
+	.hed h2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size: 20px;
+		width: 70%;
+	}
+	.hed p {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size: 13px;
+		padding: 0 10px;
+	}
+	.btn-cont {
+		height: 50px;
+	}
+	.btn-cont .btn {
+		background-color: hsl(176, 50%, 47%);
+		width: 60%;
+	}
+	.btn-cont .btn-par {
+		width: 10%;
+		top: 5px;
+		color: white;
+		display: none;
+	}
+	.btn-cont img {
+		position: absolute;
+		top: 28%;
+		width: 50px;
+		right: 18%;
 	}
 }
