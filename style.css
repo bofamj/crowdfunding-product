@@ -198,7 +198,74 @@ body {
 	background-color: hsl(176, 50%, 47%);
 	left: 5%;
 }
-@media (max-width: 600px) {
+.main {
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 5px;
+	top: 63%;
+	position: absolute;
+}
+.sec-1 {
+	width: 100%;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 35px;
+}
+.sec-1 h3 {
+	margin-top: 35px;
+}
+.sec-1 p {
+	line-height: 30px;
+	margin-top: 20px;
+}
+.sec-2 {
+	width: 90%;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 25px;
+	border: 1px solid rgb(226, 226, 226);
+	margin-top: 30px;
+	border-radius: 5px;
+}
+.sec-2diva {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.sec-2diva p {
+	color: hsl(176, 50%, 47%);
+}
+.sec-2divb {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.sec-2divb h2 span {
+	font-size: 10px;
+	margin-bottom: 10px;
+	color: rgb(190, 190, 190);
+}
+.btn-3 {
+	background-color: hsl(176, 72%, 28%);
+	width: 20%;
+	height: 50px;
+	border-radius: 30px;
+	border: none;
+	cursor: pointer;
+	color: white;
+}
+@media (max-width: 768px) {
 	.continar {
 		height: 100vh;
 		width: 100vw;
@@ -303,5 +370,39 @@ body {
 		top: 28%;
 		width: 50px;
 		right: 14%;
+	}
+	.main {
+		background-color: rgb(255, 255, 255);
+		width: 80%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		border-radius: 5px;
+		top: 63%;
+		position: absolute;
+		font-size: 8px;
+	}
+	.sec-1 {
+		width: 100%;
+		height: 350px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: flex-start;
+		padding: 35px;
+	}
+	.hed-hed {
+		background-color: rgb(255, 255, 255);
+		width: 80%;
+		height: 170px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		border-radius: 5px;
+		margin-top: 3%;
+		position: relative;
+		font-size: 8px;
 	}
 }
