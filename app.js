@@ -5,6 +5,8 @@ const btn = document.querySelector('.btn-btn');
 const pra = document.querySelector('.btn-par');
 const button = document.querySelector('.btn');
 const tctiv = document.querySelector('.btn-act');
+const back = document.querySelector('.back-mn');
+const bakBtn = document.querySelector('.bak-btn');
 
 const sowNav = document.querySelector('.sowNav');
 
@@ -27,3 +29,10 @@ function txt() {
 		pra.innerHTML = 'Bookmark';
 	}
 }
+
+button.addEventListener('click', () => {
+	back.classList.add('back-show');
+});
+bakBtn.addEventListener('click', () => {
+	back.classList.remove('back-show');
+});
